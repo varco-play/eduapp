@@ -1,0 +1,18 @@
+{
+  "name": "eduapp",
+  "version": "0.1.0",
+  "description": "AI-Powered Education Operating System",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site'",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": [
+    "education",
+    "ai",
+    "learning",
+    "analytics"
+  ],
+  "author": "Xusan, Sam",
+  "license": "MIT"
+}
