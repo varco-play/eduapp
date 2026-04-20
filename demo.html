@@ -14,7 +14,45 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             background: #f9fafb;
-            padding: 60px 20px;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .nav-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #1f2937;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid #3b82f6;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #3b82f6;
+            color: white;
         }
 
         .container {
@@ -22,6 +60,8 @@
             margin: 0 auto;
             background: white;
             padding: 60px 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
@@ -50,6 +90,25 @@
             background: #000;
         }
 
+        .description {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            line-height: 1.8;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+
+        .description p {
+            margin-bottom: 15px;
+        }
+
+        .description p:last-child {
+            margin-bottom: 0;
+        }
+
         .back-link {
             margin-top: 40px;
             text-align: center;
@@ -75,19 +134,44 @@
         @media (max-width: 768px) {
             .container {
                 padding: 40px 25px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
 
             h1 {
                 font-size: 2rem;
             }
 
-            body {
-                padding: 30px 15px;
+            nav .nav-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav h2 {
+                font-size: 1.1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 8px 14px;
+            }
+
+            .description {
+                padding: 20px;
+                font-size: 0.9rem;
+                line-height: 1.7;
             }
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-content">
+            <h2>Project Demo Video</h2>
+            <a href="./main.html">← Back to Main</a>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>Demo Video</h1>
 
@@ -98,8 +182,10 @@
             </video>
         </div>
 
-        <div class="back-link">
-            <a href="./main.html">← Back to Main</a>
+        <div class="description">
+            <p>Ushbu videoda biz platformamizning eng sodda va boshlang'ich demo prototipini namoyish etdik. Bu prototype g'oya ustida ishlashga ketgan vaqtni hisobga olmaganda, atiga 2 kun ichida tayyorlandi. Hozircha unda tizimdagi barcha asosiy rollar va eng muhim basic funksiyalar ko'rsatilgan.</p>
+
+            <p>Bu faqat boshlanishi. Keyingi bosqichlarda biz platformani yanada takomillashtirib, uni funksional, barqaror va real ta'lim muassasalari uchun foydali tizimga aylantirib boramiz. Yangi imkoniyatlar va qo'shimcha funksiyalar avval taqdim etilgan guideline, reja va product vision asosida bosqichma-bosqich qo'shiladi.</p>
         </div>
     </div>
 </body>
